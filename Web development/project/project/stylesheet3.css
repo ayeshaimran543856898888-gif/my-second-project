@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    background:  black;
+    padding: 20px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 800;
+    color: white;
+    transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a:active {
+        color: red;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: red;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+
+
+
+.hero-section{
+    margin-top: 20px;
+    width: 90%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    border-collapse: collapse;
+}
+
+.cart-info{
+    display: flex;
+}
+    
+
+th {
+    width: 43%;
+    text-align: left;
+    padding: 15px;
+    margin-right: 10PX;
+    color: white;
+    background: #1E5690;
+    font-weight: normal;
+}
+td{
+    padding: 7px 5px;
+}
+
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+    margin-left: 400px;
+    margin-bottom: 10PX;
+    margin-right: 20PX;
+}
+
+td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 60px;
+}
+
+.total-price{
+    display: flex;
+    justify-content: center;
+}
+
+.total-price table{
+    border-top: 3px solid #1E5690;
+    width: 100%;
+    max-width: 550px;
+    justify-content: flex-end;
+    margin-left: 400px;
+    margin-right: 50PX;
+}
+
+
+td:last-child{
+    text-align: right;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #888D90;
+    justify-content: space-between;
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .install i{
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+footer h4{
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+
+
+footer p{
+    font-size: 23px;
+    margin: 0 0 8px 0;
+}
+
+footer a{
+    font-size: 23px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+footer .follow {
+    color: #cdd4f8;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer .follow i:hover,
+footer a:hover {
+    color: #CA7C83;
+}
+
